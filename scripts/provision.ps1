@@ -27,6 +27,7 @@ Set-Content `
   -Force
 Restart-Service `
   -Name Jenkins
+Set-Service -Name "Jenkins" –StartupType "AutomaticDelayedStart"
 
 # Output password to vagrant console.
 $Password = Get-Content -Path "C:\.jenkins\secrets\initialAdminPassword";
