@@ -1,5 +1,3 @@
-# vagrant-win-jenkins
-Vagrantfile for setting up a Windows server with jenkins
 <h3 align="center">
   Vagrant Windows Jenkins
 </h3>
