@@ -8,6 +8,10 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "gusztavvargadr/windows-server"
   config.vm.synced_folder "jenkins", "/.jenkins"
+	
+  if Vagrant.has_plugin?("vagrant-timezone")
+    config.timezone.value = :host
+  end
   
   config.vm.provider "virtualbox" do |vb|
       vb.gui = true
