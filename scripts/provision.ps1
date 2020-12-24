@@ -11,6 +11,7 @@ iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.p
 
 #choco install jdk8 -y
 choco install Jenkins -y
+choco install git -y
 
 # Set the port Jenkins uses
 $Config = Get-Content `
